@@ -135,6 +135,9 @@ body {
     color: #A6A8AB;
     font-size: .8em;
     font-weight: 700; }
+  body .footer-text {
+    color: #A6A8AB;
+    font-size: .8em; }
   body b {
     font-weight: 600; }
   body h1 {
