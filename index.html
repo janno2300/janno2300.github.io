@@ -1,5 +1,7 @@
 <html lang="">
 <script async="false" type="text/javascript" src="in-page.js"></script>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -36,7 +38,7 @@
                         <h4>Jump to</h4>
                         <p>
                             <a href="#last">Notable projects</a><br>
-                            <a href="#cv">CV</a> | <a href="Janno Santiago.docx">Download</a><br><a href="#skills">Skills</a><br>
+                            <a href="#cv">CV</a> | &nbsp;<a href="Janno Santiago.docx"">Download</a><br><a href="#skills">Skills</a><br>
                         </p>
                     </div>
                 </div>
@@ -126,6 +128,29 @@
                     </div>
                 </div>
                 
+                <h2>Send Me a Message</h2>
+                
+                <div>
+                    <form action="https://formspree.io/f/mannlzrq" class="fs-form" target="_top" method="POST">
+                        <div class="fs-field">
+                            <label class="fs-label" for="Name">Name</label>
+                            <input class="fs-input" id="Name" name="Name" />
+                        </div>
+                        <div class="fs-field">
+                            <label class="fs-label" for="Email">Email</label>
+                            <input class="fs-input" id="Email" name="Email" required />
+                        </div>
+                        <div class="fs-field">
+                            <label class="fs-label" for="Message">Message</label>
+                            <textarea class="fs-textarea" id="Message" name="Message"></textarea>
+                            <p class="fs-description">I usually respond within 1-2 business days.</p>
+                        </div>
+                        <div class="fs-button-group">
+                            <button class="fs-button" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                
             </div>
             
             <h2></h2>            
@@ -135,4 +160,5 @@
     </div>
 
 </body>
+
 </html>
