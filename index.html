@@ -1,7 +1,7 @@
 <html lang="">
 <script async="false" type="text/javascript" src="in-page.js"></script>
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -38,7 +38,9 @@
                         <h4>Jump to</h4>
                         <p>
                             <a href="#last">Notable projects</a><br>
-                            <a href="#cv">CV</a> | &nbsp;<a href="Janno Santiago.docx">Download</a><br><a href="#skills">Skills</a><br>
+                            <a href="#cv">CV</a> | &nbsp;<a href="Janno Santiago.docx" id="send-email">Download</a><br>
+                            <a href="#skills">Skills</a><br>
+                            <a href="https://github.com/janno2300/" target="_blank">Repository</a><br>
                         </p>
                     </div>
                 </div>
@@ -160,5 +162,42 @@
     </div>
 
 </body>
+
+
+<script type="text/javascript">
+    emailjs.init("");
+    console.log(emailjs.version);
+    
+    <!-- function notifyDownload(event) { -->
+        <!-- event.preventDefault(); -->
+        <!-- emailjs.send("service_v0nwgro", "template_w6us3h4", { //service id, template id -->
+            <!-- file_name: "Janno Santiago.docx", -->
+            <!-- user_email: "janno2300@yahoo.com.ph" -->
+        <!-- }).then( -->
+            <!-- () => { -->
+                <!-- console.log("Notification email sent!"); -->
+                <!-- window.location.href = event.target.href; -->
+            <!-- }, -->
+            <!-- (err) => { -->
+                <!-- console.error("Failed to send email:", err); -->
+            <!-- } -->
+        <!-- ); -->
+    <!-- } -->
+    
+        <!-- document.getElementById('send-email').addEventListener('click', function(event) { -->
+            <!-- event.preventDefault(); -->
+            <!-- emailjs.send("service_v0nwgro", "template_w6us3h4", { -->
+                <!-- user_email: "janno2300@yahoo.com.ph", -->
+                <!-- file_name: "Janno Santiago.docx" -->
+            <!-- }).then( -->
+                <!-- function(response) { -->
+                    <!-- console.log("SUCCESS!", response.status, response.text); -->
+                <!-- }, -->
+                <!-- function(error) { -->
+                    <!-- console.error("FAILED...", error); -->
+                <!-- } -->
+            <!-- ); -->
+        <!-- }); -->
+</script>
 
 </html>
